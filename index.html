@@ -1,0 +1,1558 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>COSO 2013 + COSO ERM 2017 | Teoría y Práctica</title>
+
+  <!-- ==========================
+       CSS (Archivo externo)
+       ========================== -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Chart.js (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+  <!-- ==========================
+       HEADER / PORTADA
+       (Puedes modificar aquí título, subtítulo, etc.)
+       ========================== -->
+  <main class="container">
+    <header class="hero" id="top">
+      <div class="kicker">Marco COSO</div>
+      <h1>COSO 2013 + COSO ERM 2017</h1>
+      <p class="subtitle">Teoría (2013 y 2017) + Práctica (Simulaciones)</p>
+
+      <!-- ==========================
+           NAVEGACIÓN PRINCIPAL
+           - Teoría
+           - Práctica
+           ========================== -->
+      <nav class="tabs" aria-label="Navegación principal">
+        <button class="tab is-active" data-view="teoria" type="button">Teoría</button>
+        <button class="tab" data-view="practica" type="button">Práctica</button>
+      </nav>
+
+      <!-- ==========================
+           BUSCADOR (opcional)
+           Filtra dentro de la sección visible
+           ========================== -->
+      <div class="search">
+        <input id="searchInput" type="search" placeholder="Buscar en el contenido (ej. 'apetito', 'fraude', 'supervisión')…" />
+        <button id="clearSearch" type="button" class="ghost">Limpiar</button>
+      </div>
+
+      <!-- Índice rápido (solo saltos) -->
+      <nav class="toc" aria-label="Índice">
+        <a href="#teoria">Teoría</a>
+        <a href="#coso2013">COSO 2013</a>
+        <a href="#cosoerm2017">COSO ERM 2017</a>
+        <a href="#practica">Práctica</a>
+      </nav>
+    </header>
+
+    <!-- ==========================
+         VISTA 1: TEORÍA
+         ========================== -->
+    <section id="teoria" class="view is-visible" data-view="teoria">
+      <!-- ==========================
+           SUB-TOC TEORÍA (interno)
+           ========================== -->
+      <div class="subtoc">
+        <a class="chip" href="#coso2013">Ir a COSO 2013</a>
+        <a class="chip" href="#cosoerm2017">Ir a COSO ERM 2017</a>
+      </div>
+
+      <!-- =========================================================
+           BLOQUE TEÓRICO 1: COSO 2013
+           ========================================================= -->
+      <section id="coso2013" class="section">
+        <div class="section__head">
+          <h2>COSO 2013 · Control Interno</h2>
+          <p class="section__hint">Contenido en cascada. Gráficos insertados donde corresponden.</p>
+        </div>
+
+        <!-- ======= COMPONENTE 1 ======= -->
+        <section id="c1" class="subsection">
+          <h3 class="subsection__title">COMPONENTE 1: ENTORNO DE CONTROL</h3>
+          <div class="paper searchable">
+            <p>El entorno de control es el conjunto de políticas normas procesos procedimientos y estructura que forman la base del sistema de control interno de una organización.</p>
+
+            <p><b>Elementos clave:</b></p>
+            <ul>
+              <li>Integridad y valores éticos</li>
+              <li>Normas de conducta</li>
+              <li>Estructura organizacional</li>
+              <li>Asignación de facultades y responsabilidades</li>
+              <li>Desarrollo de profesionales competentes</li>
+              <li>Parámetros de desempeño e incentivos</li>
+            </ul>
+
+            <p><b>Importancia estratégica:</b> El entorno del control establece el tono organizacional e influencia en la conciencia de control de todos los colaboradores. Es la base sobre la cual se construyen los demás componentes los sistemas de control interno</p>
+            <p><b>Objetivo:</b> Apoyar la implementación de un sistema de control interno efectivo para apalancar el cumplimiento de objetivos y de negocio.</p>
+
+            <!-- Gráfico 1 -->
+            <figure class="chart">
+              <figcaption>Componentes del sistema de control COSO</figcaption>
+              <div class="chart__wrap"><canvas id="g1_componentes"></canvas></div>
+            </figure>
+
+            <h4>Principio 1: Compromiso con la Integridad y los valores Éticos</h4>
+            <p>La organización demuestra compromiso con la integridad y los valores como fundamento del sistema de control interno.</p>
+
+            <h5>CARACTERÍSTICAS:</h5>
+            <ul>
+              <li><b>Liderazgo ejemplar:</b> el consejo y alta dirección demuestra a través de sus conocimientos la importancia y la integridad y los valores éticos.</li>
+              <li><b>Formolización de expectativas:</b> las expectativas se consignan en normas de conducta y son divulgadas a todos los niveles</li>
+              <li><b>Evaluación continua:</b> se evalúa periódicamente el cumplimiento de las normas de conducta</li>
+              <li><b>Acciones correctivas:</b> se implementan medidas oportunas ante cualquier desviación</li>
+            </ul>
+
+            <!-- Gráfico 2 -->
+            <figure class="chart">
+              <figcaption>Elementos del componente ético</figcaption>
+              <div class="chart__wrap"><canvas id="g2_etico"></canvas></div>
+            </figure>
+
+            <h5>MANIFESTACIONES FORMALES:</h5>
+            <p>Estas manifestaciones deben quedar explícitas y formalizadas a través de:</p>
+            <ul>
+              <li>Código de buen gobierno corporativo.</li>
+              <li>Normas de conducta y/o ética empresarial.</li>
+              <li>Principios y valores corporativos.</li>
+              <li>Normas, políticas y procedimientos de operación.</li>
+              <li>Respuestas a desviaciones de normas.</li>
+              <li>Política de cumplimiento normativo.</li>
+              <li>Política para conflictos de interés.</li>
+              <li>Política para la línea ética.</li>
+            </ul>
+
+            <h5>CAUSAS DE IMCUMPLIMIENTO:</h5>
+            <p>El incumplimiento de las normas puede obedecer a diversas situaciones:</p>
+            <ul>
+              <li>Transmisión inadecuada de expectativas.</li>
+              <li>Falta de supervisión del Consejo.</li>
+              <li>Descentralización sin adecuada supervisión.</li>
+              <li>Presión por el no cumplimiento.</li>
+              <li>Incentivos que fomentan el incumplimiento.</li>
+              <li>Falta de canales seguros de comunicación.</li>
+              <li>Controles ineficaces.</li>
+              <li>Procesos inadecuados de investigación.</li>
+              <li>Función de auditoría débil.</li>
+              <li>Sanciones no transparentes o mal aplicadas.</li>
+            </ul>
+
+            <h4>Principio 2: Independencia y Supervisión del Consejo</h4>
+            <p>El Consejo de Administración demuestra independencia de la Dirección y ejerce la supervisión del desempeño del sistema de control interno.</p>
+
+            <h5>PREMISAS DEL PRINCIPIO:</h5>
+            <ul>
+              <li><b>Identificación de responsabilidades:</b> El Consejo identifica y acepta sus responsabilidades de supervisión.</li>
+              <li><b>Competencia del Consejo:</b> Define, mantiene y evalúa periódicamente las habilidades y conocimientos necesarios.</li>
+              <li><b>Independencia:</b> Cuenta con suficientes miembros objetivos e independientes de la Dirección.</li>
+              <li><b>Supervisión efectiva:</b> Tiene responsabilidad sobre el diseño, implementación y ejecución del control interno.</li>
+            </ul>
+
+            <!-- Gráfico 3 -->
+            <figure class="chart">
+              <figcaption>Premisas del principio de independencia</figcaption>
+              <div class="chart__wrap"><canvas id="g3_independencia"></canvas></div>
+            </figure>
+
+            <h5>COMITÉS DE SUPERVISIÓN:</h5>
+            <p>La delegación del Consejo se implementa a través de comités especializados:</p>
+            <ul>
+              <li><b>Comité de Buen Gobierno Corporativo:</b> Dirige la selección de consejeros y supervisa la evaluación de la Alta Dirección y del Consejo.</li>
+              <li><b>Comité de Compensación:</b> Supervisa las políticas y prácticas de retribución y monitorea la consecución de resultados.</li>
+              <li><b>Comité de Auditoría:</b> Supervisa el control interno de la organización y la gestión de riesgos.</li>
+            </ul>
+
+            <h4>Principio 3: Estructura, Autoridad y Responsabilidad</h4>
+            <p>La Alta Dirección establece, con la supervisión del Consejo, las estructuras, líneas de reporte y niveles de responsabilidad apropiados.</p>
+
+            <h5>DIMENSIONES ESTRUCTURALES:</h5>
+            <p>Las organizaciones se estructuran según diferentes dimensiones:</p>
+            <ul>
+              <li><b>Modelo Operativo:</b> Estructurado por líneas de servicio o producto para optimizar marketing, producción y atención al cliente</li>
+              <li><b>Estructuras Jurídicas:</b> Diseñadas para gestionar riesgos y facilitar estructuras fiscales favorables.</li>
+              <li><b>Mercados Geográficos:</b> Proporcionan subdivisiones o agregaciones de resultados por regiones.</li>
+              <li><b>Servicios Externalizados:</b> Requieren líneas adicionales de comunicación e información.</li>
+            </ul>
+
+            <h5>LÍNEAS DE CONTROL:</h5>
+            <p><b>Primera Línea:</b></p>
+            <ul><li>Alta Dirección y personal, responsables de mantener un control interno efectivo en actividades del día a día.</li></ul>
+            <p><b>Segunda Línea:</b></p>
+            <ul><li>Funciones de soporte que proporcionan orientación y evalúan cumplimiento (Gestión de Riesgos, Financiera, TI, RR. HH.).</li></ul>
+            <p><b>Tercera Línea:</b></p>
+            <ul><li>Auditores y entes de control, quienes evalúan y comunican sobre el sistema de control interno, recomendando mejoras.</li></ul>
+
+            <h5>ASIGNACIÓN DE RESPONSABILIDADES:</h5>
+            <ul>
+              <li><b>Consejo de Administración:</b> Se mantiene informado, cuestiona objetivamente y orienta sobre decisiones importantes.</li>
+              <li><b>Alta Dirección:</b> responsable frente al Consejo y grupos de interés de establecer instrucciones y controles.</li>
+              <li><b>Dirección:</b> Ejecuta instrucciones proporcionadas por la Alta Dirección y sus unidades de negocio.</li>
+              <li><b>Personal:</b> Comprende normas de conducta, objetivos, riesgos y actividades relevantes para el logro de objetivos.</li>
+            </ul>
+
+            <!-- Gráfico 4 -->
+            <figure class="chart">
+              <figcaption>Modelo de Tres Líneas de Defensa</figcaption>
+              <div class="chart__wrap"><canvas id="g4_tres_lineas"></canvas></div>
+            </figure>
+
+            <h4>Principio 4: Compromiso con la Competencia</h4>
+            <p>La organización demuestra compromiso para atraer, desarrollar y retener profesionales competentes en alineación con los objetivos.</p>
+
+            <h5>POLÍTICAS Y PRÁCTICAS:</h5>
+            <ul>
+              <li><b>Requisitos y Racionalización:</b> Implicaciones de leyes, reglas y regulaciones aplicables a la organización.</li>
+              <li><b>Habilidades y Conductas:</b> Conocimiento de plataformas tecnológicas y procesos que soportan el control interno.</li>
+              <li><b>Responsabilidad por Rendición:</b> Bases para medir eficiencia y tomar correctivas en todos los niveles organizacionales.</li>
+            </ul>
+
+            <h5>GESTIÓN DE TALENTO:</h5>
+            <p>Procesos clave para la gestión de recursos humanos:</p>
+            <ul>
+              <li><b>Atraer:</b> Identificar candidatos que se adapten a la organización y competencias culturales requeridas.</li>
+              <li><b>Formar:</b> Desarrollar competencias pertinentes, reforzar normas de conducta según necesidades</li>
+              <li><b>Tutelar:</b> Aportar asesoramiento sobre desempeño y ayudar a adaptarse a entornos cambiantes.</li>
+              <li><b>Evaluar:</b> Medir desempeño en relación con el objeto y conducta esperada, incluyendo proveedores externos.</li>
+              <li><b>Retener:</b> Proporcionar incentivos para motivar y reforzar niveles esperados de desempeño y conductas</li>
+            </ul>
+
+            <h4>Principio 5: Responsabilidad por el Control Interno</h4>
+            <p>La organización define las responsabilidades de las personas a nivel de control interno para la consecución de los objetivos.</p>
+
+            <h5>GESTIÓN DE TALENTO:</h5>
+            <p>Procesos clave para la gestión de recursos humanos:</p>
+
+            <p><b>Claridad de expectativas.</b></p>
+            <ul><li>Integridad y ética.</li><li>Conflictos de interés.</li><li>Prevención de competencia desleal.</li></ul>
+
+            <p><b>Liderazgo y Orientación</b></p>
+            <ul><li>Filosofía organizacional.</li><li>Mentalidad frente al control.</li><li>Persistencia en estándares.</li></ul>
+
+            <p><b>Comunicación Efectiva</b></p>
+            <ul><li>Flujo de información.</li><li>Feedback de 360°.</li><li>Canales ascendentes.</li></ul>
+
+            <p><b>Respuesta a Desviaciones</b></p>
+            <ul><li>Medidas correctivas.</li><li>Afectación de compensación.</li><li>Sanciones disciplinarias.</li></ul>
+
+            <h5>DISEÑO E INCENTIVOS:</h5>
+            <p>El Consejo y Alta Dirección establecen parámetros equilibrados:</p>
+            <ul>
+              <li><b>Definición cuantitativa y cualitativa:</b> Los parámetros deben medir aspectos tangibles e intangibles del desempeño.</li>
+              <li><b>Alineación con objetivos:</b> Los incentivos deben respaldar un sistema de control interno efectivo.</li>
+              <li><b>Tipos de incentivos:</b> Aumentos de sueldo, bonos, primas, ascensos y otras recompensas no monetarias.</li>
+              <li><b>Evaluación continua:</b> Revisión regular para asegurar que no motiven conductas inapropiadas.</li>
+            </ul>
+
+            <p><b>Advertencia:</b> Las Organizaciones que enfocan únicamente en incrementar beneficios experimentan comportamientos no deseados como manipulación financiera o prácticas comerciales basadas en alta presión.</p>
+
+            <h5>GESTIÓN DE PRESIONES:</h5>
+            <p>El Consejo y Alta Dirección evalúan y ajustan presiones asociadas con el cumplimiento de objetivos:</p>
+
+            <p><b>Fuentes de Presión Excesiva:</b></p>
+            <ul><li>Objetivos de desempeño poco realistas</li><li>Conflictos entre grupos de interés,</li><li>Desequilibrio en recompensas financieras.</li></ul>
+
+            <p><b>Riesgos Asociados:</b></p>
+            <ul><li>Miedo al incumplimiento</li><li>Prácticas fraudulentas</li><li>Corrupción y comportamientos ilícitos.</li></ul>
+
+            <p>Ejemplo de riesgo: Presión para generar ventas desproporcionadas puede llevar a falsificación de números o actos de soborno.</p>
+          </div>
+        </section>
+
+        <!-- ======= COMPONENTE 2 ======= -->
+        <section id="c2" class="subsection">
+          <h3 class="subsection__title">COMPONENTE 2: EVALUACIÓN DE RIESGOS</h3>
+          <div class="paper searchable">
+            <p>Implementación de un Sistema de Control Interno Efectivo para apalancar el cumplimiento de objetivos estratégicos y de negocio.</p>
+            <ul>
+              <li>El riesgo no solo afecta negativamente también puede tener efectos positivos.</li>
+              <li>No es posible reducir el riesgo a 0.</li>
+              <li>Mayor riesgo, mayor rentabilidad.</li>
+            </ul>
+
+            <p><b>Riesgo:</b> Se define como la probabilidad de que un evento ocurra y afecte negativamente la consecución de los objetivos del negocio.</p>
+
+            <p>El riesgo puede afectar:</p>
+            <ul>
+              <li>Capacidad de la empresa para tener éxito</li>
+              <li>Competencia dentro de su sector</li>
+              <li>Solidez financiera y reputación positiva</li>
+              <li>Estándares altos de calidad</li>
+            </ul>
+
+            <p><b>Tolerancia al Riesgo:</b> Es el nivel aceptable de la variación del desempeño con relación a la consecución de los objetivos.</p>
+
+            <p><b>Medición de la Tolerancia al Riesgo</b></p>
+            <ul>
+              <li><b>Términos financieros y contables:</b> Se mide en términos de rentabilidad</li>
+              <li><b>Aspectos de cumplimiento:</b> Se mide en términos de nivel aceptable de variación de desempeño.</li>
+            </ul>
+
+            <p><b>LA REPUTACIÓN:</b> Es el riesgo al que se toma más importancia. Las cosas valen por la reputación, por la calidad.</p>
+
+            <!-- Gráfico 5 -->
+            <figure class="chart">
+              <figcaption>Impacto de riesgo por categoría</figcaption>
+              <div class="chart__wrap"><canvas id="g5_impacto_riesgo"></canvas></div>
+            </figure>
+
+            <p><b>PRINCIPIOS Y OBJETIVOS:</b></p>
+            <p><b>PRINCIPIOS:</b> La organización define los objetivos con suficiente claridad para permitir la identificación y evaluación de los riesgos relacionados.</p>
+
+            <p><b>OBJETIVOS OPERACIONALES:</b></p>
+            <ul>
+              <li>Reflejan decisiones de la administración sobre estructura y desempeño.</li>
+              <li>Consideran las tolerancias de riesgos</li>
+              <li>Incluye metas de desempeño financiero y de operaciones</li>
+              <li>Forman una base para asignación de recursos</li>
+            </ul>
+
+            <p><b>OBJETIVOS DE INFORMACIÓN:</b></p>
+            <ul>
+              <li>Cumplen normas de compatibilidad aplicables</li>
+              <li>Consideran la materialidad</li>
+              <li>Consideran nivel necesario de precisión y exactitud</li>
+            </ul>
+
+            <p><b>Tipos de información:</b></p>
+            <ol>
+              <li>Información externa: Motivadas por normas, leyes y regulaciones</li>
+              <li>Información interna: Motivadas por decisiones estratégicas y requisitos de la dirección</li>
+            </ol>
+
+            <p><b>IDENTIFICACIÓN DE RIESGOS:</b> La organización identifica los riesgos para la consecución de objetivos en todos sus niveles y los análisis como base para determinar cómo se deben gestionar.</p>
+
+            <p><b>Riesgos a Nivel de Entidad:</b></p>
+            <p><b>1. Factores externos</b></p>
+            <p>Económicos: Cambios en financiación, disponibilidad de capital</p>
+            <p>Entorno natural: Catástrofes naturales, cambios climáticos</p>
+            <p>Regulatorio: Nuevas normas o regulaciones</p>
+            <p>Sociales: Expectativas cambiantes de clientes</p>
+            <p>Tecnológicos: Avances que afecten disponibilidad de datos</p>
+
+            <p><b>2. Factores internos</b></p>
+            <p>Infraestructura: Decisiones sobre uso de recursos de capital</p>
+            <p>Estructura de dirección: Cambios en responsabilidades</p>
+            <p>Personal: Calidad de personal y métodos de formación</p>
+            <p>Sociales: Accesibilidad a recursos</p>
+
+            <!-- Gráfico 6 -->
+            <figure class="chart">
+              <figcaption>Riesgos por categoría</figcaption>
+              <div class="chart__wrap"><canvas id="g6_riesgos_categoria"></canvas></div>
+            </figure>
+
+            <p><b>Análisis de Riesgos:</b> La valoración de los riesgos permite a la entidad considerar como eventos potenciales pueden afectar el logro de los objetivos.</p>
+            <ul>
+              <li><b>Probabilidad:</b> Posibilidad de que se presente un evento</li>
+              <li><b>Impacto:</b> Efecto potencial del evento.</li>
+            </ul>
+
+            <h4>Respuestas Adoptadas ante los Riesgos</h4>
+            <ol>
+              <li><b>Aceptar:</b> No se adoptan medidas que afecten la probabilidad o el impacto.</li>
+              <li><b>Evitar:</b> Se abandonan las actividades que den lugar al riesgo.</li>
+              <li><b>Reducir:</b> Se adoptan medidas administrativas o controles para reducir la probabilidad y/o el impacto</li>
+              <li><b>Compartir:</b> Se transfiere o comparte el riesgo</li>
+            </ol>
+
+            <p><b>Riesgo de Fraude:</b> La organización identifica los factores que podrían producir la materialización de riesgos de fraude.</p>
+
+            <h4>Tipos de Fraude</h4>
+            <ol>
+              <li><b>Información Financiera Fraudulenta:</b> Información preparada de manera predeterminada con omisión o errores que afectan la interpretación o uso de la información.</li>
+              <li><b>Información no Financiera Fraudulenta:</b> Acto intencionado dirigido a engañar usuarios de información no financiera como informes de sostenibilidad, seguridad y salud en el trabajo.</li>
+              <li><b>Apropiación Indebida de Activos:</b> Robo de activos o bienes de la empresa cuando el efecto resultante pueda ocasionar omisión o error material en los informes financieros.</li>
+              <li><b>Actos Ilícitos:</b> Incumplimiento de leyes o regulaciones públicas que podrían impactar de manera material los reportes financieros.</li>
+            </ol>
+
+            <p><b>Evaluación de cambios:</b> La organización identifica y evalúa los cambios que podría afectar significativamente al sistema de control interno.</p>
+
+            <h4>Entorno Externo Cambiante:</h4>
+            <ul>
+              <li>Nuevas regulaciones por fallos de cumplimiento</li>
+              <li>Desastres naturales que afectan operaciones</li>
+              <li>Cambios en expectativas de stakeholders</li>
+            </ul>
+
+            <h4>Modelo de Negocio</h4>
+            <ul>
+              <li>Nuevas líneas de negocio</li>
+              <li>Modificaciones en prestación de servicios</li>
+              <li>Adquisiciones o desinversiones</li>
+            </ul>
+
+            <h4>Cambios en Personal</h4>
+            <ul>
+              <li>Nuevos estilos de gestión</li>
+              <li>Revisión de controles existentes</li>
+              <li>Exposición a nuevos riesgos</li>
+            </ul>
+
+            <p>Análisis de R</p>
+          </div>
+        </section>
+
+        <!-- ======= COMPONENTE 3 ======= -->
+        <section id="c3" class="subsection">
+          <h3 class="subsection__title">COMPONENTE 3: ACTIVIDADES DE CONTROL</h3>
+          <div class="paper searchable">
+            <p>Son acciones o medidas administrativas que se documentan en políticas y procedimientos, diseñadas para garantizar que se lleven a cabo las instrucciones de la Dirección y mitigar riesgos que pueden afectar el cumplimiento de los objetivos del negocio.</p>
+
+            <p>Las actividades de control se implementan en todos los niveles.</p>
+            <ul>
+              <li>Presidencia</li>
+              <li>Vicepresidencia</li>
+              <li>Gerencias</li>
+              <li>Direcciones</li>
+              <li>Personal operativo</li>
+            </ul>
+
+            <p><b>PRINCIPIO 1:</b>La organización define y desarrolla actividades de control que contribuyen a la mitigación de los riesgos hasta niveles aceptables.</p>
+            <p><b>PRINCIPIO 2:</b>La organización define y desarrolla las actividades de control a nivel de la organización sobre la tecnología para apoyar la consecución de objetivos</p>
+            <p><b>PRINCIPIO 3:</b>La organización despliega las actividades de control, a través de políticas que establecen líneas generales y procedimientos que las lleva a la práctica.</p>
+
+            <p><b>Factores específicos de la organización</b></p>
+            <p>Las actividades de control consideran factores específicos como:</p>
+            <ol>
+              <li>Entorno regulado: Organizaciones con alta regulación tienen controles más complejos</li>
+              <li>Complejidad operativa: Multinacionales con muchas operaciones requieren controles más sofisticados.</li>
+              <li>Nivel tecnológico: Entidades con ERP tienen controles diferentes a las con limitaciones tecnológicas.</li>
+              <li>Estructura Organizacional: Centralización vs descentralizadas requieren enfoques diferentes.</li>
+            </ol>
+
+            <h4>TIPOS DE ACTIVIDADES DE CONTROL</h4>
+            <p><b>Reconciliaciones:</b> Comparan dos o más elementos de datos y adoptan medidas ante diferencias.</p>
+            <p><b>Ejemplos:</b></p>
+            <ul>
+              <li>Conciliación bancaria</li>
+              <li>Cierres diarios de caja</li>
+              <li>Facturación e ingresos registrados</li>
+            </ul>
+
+            <p><b>Controles Preventivos:</b> Diseñados para evitar que un evento no previsto se materialice.</p>
+            <p>Ejemplo: verificación por parte de la gerencia al revisar transacciones.</p>
+
+            <p><b>Controles Detectivos:</b> Diseñados para identificar eventos no previstos después de ocurridos. Ejemplo: conciliaciones que identifican desviaciones.</p>
+
+            <h4>Consideraciones para PYMES</h4>
+            <p>Para entidades medianas y pequeñas, la segregación de funciones puede no ser costo-efectivo. En estos casos se deben implementar controles compensatorios que mitiguen los riesgos descritos.</p>
+
+            <h4>Controles sobre Infraestructura tecnológica</h4>
+            <p>La información tecnológica incluye:</p>
+            <ul>
+              <li>Redes de comunicación</li>
+              <li>Recursos informáticos para aplicaciones</li>
+              <li>Sistemas eléctricos</li>
+            </ul>
+
+            <p>Esta infraestructura se puede externalizar en proveedores, en la nube (Cloud Computing) o compartirse en centro de servicios compartidos.</p>
+
+            <h4>Gestión de seguridad</h4>
+            <p>La gestión de seguridad incluye actividades de control relacionadas con:</p>
+            <ul>
+              <li>Derechos de acceso a datos</li>
+              <li>Acceso al sistema operativo</li>
+              <li>Acceso a redes</li>
+            </ul>
+
+            <h4>ACTIVIDADES DE CONTROL BASADAS EN COSO 2013</h4>
+
+            <p><b>Políticas y Procedimientos</b></p>
+            <p>La organización despliega las actividades de control a través de políticas que establecen las líneas generales de control interno y procedimientos que llevan dichas políticas a la práctica.</p>
+
+            <p><b>Implementación de decisiones</b></p>
+            <p>Las políticas reflejan la visión de la dirección sobre el control interno, documentada por escrito o de manera implícita. Los procedimientos implementan estas políticas.</p>
+
+            <p><b>Responsabilidades</b></p>
+            <p>Se establecen responsabilidades claras para la ejecución de políticas y procedimientos, tanto a nivel directivo como operativo</p>
+          </div>
+        </section>
+
+        <!-- ======= COMPONENTE 4 ======= -->
+        <section id="c4" class="subsection">
+          <h3 class="subsection__title">Componente 4: INFORMACIÓN Y COMUNICACIÓN</h3>
+          <div class="paper searchable">
+            <p>La información es requerida por la organización para el cumplimiento de sus responsabilidades de control interno y asegurar el logro de sus objetivos. La administración debe obtener, generar y utilizar información importante y de calidad, tanto de fuentes internas como externas.</p>
+
+            <p><b>Comunicación:</b> Proceso continuo de generar, compartir y obtener información.</p>
+
+            <p><b>Sistema de información:</b> Conjunto de actividades que involucran personas, procesos, datos y tecnología, permitiendo a la organización generar información útil, comunicar transacciones y medir el desempeño organizacional.</p>
+
+            <p><b>Características de la información</b></p>
+            <ul>
+              <li><b>Comprensibles:</b> Claridad y facilidad para ser entendida</li>
+              <li><b>Útil:</b> Capacidad de ser pertinente y confiable</li>
+              <li><b>Pertinente:</b> Posee valor de retroalimentación y predicción</li>
+              <li><b>Confiable:</b> Neutral, verificable y representa fielmente los hechos</li>
+              <li><b>Relevante:</b> Capacidad de influir en la toma de decisiones</li>
+            </ul>
+
+            <!-- Gráfico 7 -->
+            <figure class="chart">
+              <figcaption>Características de la información</figcaption>
+              <div class="chart__wrap"><canvas id="g7_info"></canvas></div>
+            </figure>
+
+            <h4>PRINCIPIO 1: Información Relevante y de Calidad</h4>
+            <p>La organización obtiene, genera y utiliza información relevante y de calidad para apoyar el funcionamiento del control interno.</p>
+            <p><b>Características:</b></p>
+            <ul>
+              <li>Identifica requisitos de información</li>
+              <li>Captura datos de fuentes internas y externas</li>
+              <li>Procesa y transforma datos en información útil</li>
+              <li>Genera información de calidad y oportuna</li>
+            </ul>
+
+            <h4>PRINCIPIO 2: Comunicación Interna</h4>
+            <p>La organización comunica la información internamente, incluidos los objetivos y responsabilidades necesarios para apoyar el funcionamiento del Sistema de Control Interno.</p>
+
+            <p><b>Característica:</b></p>
+            <ul>
+              <li>Normas políticas y procedimientos claros.</li>
+              <li>Comunicación bidireccional entre dirección y consejo de administración.</li>
+              <li>Canal ético o línea de denuncias</li>
+              <li>Clasificación clara de la información (pública, privada, confidencial)</li>
+            </ul>
+
+            <p><b>Contenido de la Comunicación</b></p>
+            <ul>
+              <li>Políticas y procedimientos de control interno</li>
+              <li>Objetivos del sistema de control interno</li>
+              <li>Importancia de un Sistema de control interno eficaz</li>
+              <li>Funciones y responsabilidades de la Alta Dirección</li>
+              <li>Comunicación de debilidades e incumplimientos identificados</li>
+            </ul>
+
+            <h4>PRINCIPIO 3: Comunicación Externa</h4>
+            <p>La organización se comunica con las partes interesadas externas sobre los aspectos clave que afectan el funcionamiento del control interno.</p>
+
+            <p><b>Características:</b></p>
+            <ul>
+              <li>Procesos para comunicación con partes interesadas externas</li>
+              <li>Recepción de comunicaciones externas</li>
+              <li>Información relevante al consejo de evaluaciones</li>
+              <li>Canales seguros para denuncias anónimas y seguras</li>
+              <li>Métodos adecuados para cada público objetivo}</li>
+            </ul>
+
+            <p><b>Información Externa Relevante</b></p>
+            <ul>
+              <li>Informes de auditores externos sobre el sistema</li>
+              <li>Debilidades de control en reportes financieros</li>
+              <li>Retroalimentación de clientes sobre calidad</li>
+              <li>Normas y regulaciones de entes de control</li>
+              <li>Resultado de revisiones tributarias o bursátiles</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ======= COMPONENTE 5 ======= -->
+        <section id="c5" class="subsection">
+          <h3 class="subsection__title">Componente 5: Actividades de supervisión</h3>
+          <div class="paper searchable">
+            <p><b>Actividades de supervisión</b></p>
+            <p>Todo sistema debe ser revisado de manera permanente y retroalimentado para que mantenga su eficiencia. La actividad de supervisión y monitoreo enmarcan la función de controlar: comparar lo ejecutado con lo programado.</p>
+
+            <p>La ejecución de las tareas diarias permite identificar si se están logrando los objetivos de control y si los riesgos están siendo mitigados, por los que es importante la debida supervisión por parte de la alta dirección.</p>
+
+            <p><b>Actividades de supervisión realizadas por</b></p>
+            <ul>
+              <li>Comités de grupos de gerencias ( actas y compromisos)</li>
+              <li>Sistema de información gerencial ( análisis y seguimiento)</li>
+              <li>Entidades externas de control y vigilancia</li>
+              <li>Auditoría interna ( informes y seguimientos)</li>
+            </ul>
+
+            <h4>Modelo de Tres Líneas de Defensa</h4>
+            <p><b>Primera Línea</b></p>
+            <p>Realiza evaluaciones continuas en el día a día. Genera información necesaria para la supervisión del sistema.</p>
+
+            <p><b>Segunda Línea</b></p>
+            <p>Realiza la supervisión del sistema de manera continua por parte de la Alta Dirección y otros responsables.</p>
+
+            <p><b>Tercera Línea</b></p>
+            <p>Auditores internos, externos y entes de regulación que realizan evaluaciones independientes periódicamente.</p>
+
+            <h4>Principios de las Actividades de Supervisión</h4>
+            <p>La organización selecciona, desarrolla y realiza evaluaciones continuas y/o independientes para determinar si los componentes del sistema de control interno están presentes y en funcionamiento.</p>
+
+            <ul>
+              <li><b>Alta Dirección Involucrada</b><br/>La Alta Dirección involucra una serie de evaluaciones continuas e independientes.</li>
+              <li><b>Consideración de la Dinámica</b><br/>Se tiene en cuenta la dinámica de la industria, el negocio, los procesos y los riesgos.</li>
+              <li><b>Referente o Modelo</b><br/>Se cuenta con un referente o modelo del Sistema de Control Interno</li>
+              <li><b>Personal Capacitado</b><br/>Se cuenta con personal capacitado para realizar las actividades de supervisión.</li>
+              <li><b>Integración con Procesos</b><br/>Las evaluaciones se integran con los procesos de negocio.</li>
+              <li><b>Ajuste según Riesgo</b><br/>Las evaluaciones se ajustan en función del riesgo.</li>
+              <li><b>Periodicidad</b><br/>Las evaluaciones se hacen periódicamente para obtener resultados objetivos.</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <!-- =========================================================
+           BLOQUE TEÓRICO 2: COSO ERM 2017 (TEXTO COMPLETO DEL DOCX)
+           ========================================================= -->
+      <section id="cosoerm2017" class="section">
+        <div class="section__head">
+          <h2>COSO ERM 2017 · Gestión de Riesgos Empresariales</h2>
+          <p class="section__hint">Texto completo del documento + gráficos (componentes / principios).</p>
+        </div>
+
+        <div class="paper searchable">
+          <!-- ===== Comentarios para ubicar estructura =====
+               - Aquí está TODO el texto ERM (2017).
+               - Si quieres cambiar títulos: edita los h3/h4.
+               - Si quieres mover los gráficos: mueve los <figure> donde quieras.
+          -->
+
+          <h3>GESTIÓN DE RIESGOS EMPRESARIALES</h3>
+          <h3>RESUMEN EJECUTIVO</h3>
+          <p>Este proyecto fue encargado por el Committee of Sponsoring Org...terno, gestión de riesgos empresariales y prevención de fraudes.</p>
+          <p>El documento actualizado, titulado "Gestión de Riesgos Empresa...cimiento de la estrategia como en la conducción del rendimiento.</p>
+
+          <h4>Esta actualización</h4>
+          <ul>
+            <li>Proporciona una mayor visión del valor de la gestión de riesgos empresariales al establecer y ejecutar la estrategia.</li>
+            <li>Mejora la alineación entre el rendimiento y la gestión de riesgos empresariales.</li>
+            <li>Acomoda las expectativas de gobernanza y supervisión.</li>
+            <li>Reconoce la globalización de los mercados y operaciones.</li>
+            <li>Presenta nuevas formas de ver el riesgo para establecer y lograr objetivos.</li>
+            <li>Expande los informes para abordar las expectativas de mayor transparencia.</li>
+          </ul>
+
+          <h4>Patrocinadores de COSO</h4>
+          <p>COSO es una iniciativa del sector privado, patrocinada y financiada conjuntamente por:</p>
+          <ul>
+            <li>American Accounting Association</li>
+            <li>American Institute of Certified Public Accountants</li>
+            <li>Financial Executives International</li>
+          </ul>
+
+          <p>...</p>
+
+          <p>Además, una vez definida la estrategia, la gestión de riesgos...s adecuadamente, aun cuando cambien las condiciones del entorno.</p>
+
+          <h3>GUÍA PARA LA JUNTA DIRECTIVA</h3>
+          <p>La junta directiva cumple un rol clave de supervisión, orient...omo la revisión continua de las prácticas de gestión de riesgos.</p>
+          <p>Dentro de su rol, la junta revisa y desafía a la gerencia en ...pa en la relación con inversionistas y otras partes interesadas.</p>
+
+          <h3>UN MARCO ENFOCADO</h3>
+          <h3>COMPONENTES DEL MARCO</h3>
+          <p>Gestión de Riesgos Empresariales-Integración con Estrategia y...ificación estratégica y su integración en toda una organización.</p>
+          <p>El Marco en sí es un conjunto de principios organizados en cinco componentes interrelacionados:</p>
+          <ol>
+            <li>Gobernanza y Cultura: La gobernanza establece el tono de l...lidades de supervisión para la gestión de riesgos empresariales.</li>
+            <li>Estrategia y Establecimiento de Objetivos: La gestión de r...ivos trabajan juntos en el proceso de planificación estratégica.</li>
+            <li>Rendimiento: Los riesgos que pueden impactar el logro de l...s objetivos comerciales necesitan ser identificados y evaluados.</li>
+            <li>Revisión y Revisión: Al revisar el rendimiento de la entid...omponentes de la gestión de riesgos empresariales con el tiempo.</li>
+            <li>Información, Comunicación e Informes: La gestión de riesgo...o continuo de obtención y compartición de información necesaria.</li>
+          </ol>
+
+          <!-- Gráfico ERM 1 -->
+          <figure class="chart">
+            <figcaption>COSO ERM 2017 · Distribución conceptual de los 5 componentes</figcaption>
+            <div class="chart__wrap"><canvas id="g8_erm_componentes"></canvas></div>
+          </figure>
+
+          <h3>PRINCIPIOS DEL MARCO</h3>
+          <p>Los cinco componentes en el Marco actualizado son apoyados po... aplicadas de diferentes maneras para diferentes organizaciones.</p>
+          <p>Los 20 principios del Marco son:</p>
+          <ol>
+            <li>Ejerce la Supervisión de Riesgos de la Junta</li>
+            <li>Establece Estructuras Operativas</li>
+            <li>Define la Cultura Deseada</li>
+            <li>Demuestra Compromiso con los Valores Fundamentales</li>
+            <li>Atrae, Desarrolla y Retiene Individuos Capaces</li>
+            <li>Analiza el Contexto Comercial</li>
+            <li>Define el Apetito de Riesgo</li>
+            <li>Evalúa Estrategias Alternativas</li>
+            <li>Formula Objetivos Comerciales</li>
+            <li>Identifica el Riesgo</li>
+            <li>Evalúa la Severidad del Riesgo</li>
+            <li>Prioriza los Riesgos</li>
+            <li>Implementa Respuestas al Riesgo</li>
+            <li>Desarrolla una Visión de Cartera</li>
+            <li>Evalúa el Cambio Sustancial</li>
+            <li>Revisa el Riesgo y el Rendimiento</li>
+            <li>Persigue la Mejora en la Gestión de Riesgos Empresariales</li>
+            <li>Aprovecha los Sistemas de Información</li>
+            <li>Comunica Información sobre Riesgos</li>
+            <li>Informa sobre Riesgo, Cultura y Rendimiento</li>
+          </ol>
+
+          <!-- Gráfico ERM 2 -->
+          <figure class="chart">
+            <figcaption>COSO ERM 2017 · Principios por componente (estructura típica 5/4/5/3/3)</figcaption>
+            <div class="chart__wrap"><canvas id="g9_erm_principios"></canvas></div>
+          </figure>
+
+          <h3>MIRANDO HACIA EL FUTURO</h3>
+          <h3>TENDENCIAS FUTURAS</h3>
+          <p>No hay duda de que las organizaciones continuarán enfrentando... una organización gestiona y prospera a través de estos tiempos.</p>
+          <p>Al mirar hacia el futuro, hay varias tendencias que tendrán un efecto en la gestión de riesgos empresariales.</p>
+          <p>Solo cuatro de estas son:</p>
+          <ol>
+            <li>Tratando con la proliferación de datos: A medida que más y...menta, la gestión de riesgos empresariales necesitará adaptarse.</li>
+            <li>Aprovechando la inteligencia artificial y automatización: ...resariales consideren el impacto de estas y futuras tecnologías.</li>
+            <li>Gestionando el costo de la gestión de riesgos: Una preocup...las actividades de control en comparación con el valor obtenido.</li>
+            <li>Construyendo organizaciones más fuertes: A medida que las ...to, se presentará una oportunidad para fortalecer la resiliencia</li>
+          </ol>
+
+          <h3>PRINCIPIOS CLAVES DEL MARCO COSO</h3>
+          <p>La organización debe implementar una estructura adecuada para integrar la gestión de riesgos en la estrategia.</p>
+          <p>La gobernanza y cultura organizacional deben apoyar la identificación y gestión del riesgo.</p>
+          <p>La organización evalúa y ajusta estrategias considerando el apetito al riesgo.</p>
+          <p>La organización establece estructuras operativas claras que facilitan la gestión del riesgo.</p>
+          <p>Se define el apetito al riesgo como guía para la toma de decisiones.</p>
+          <p>La organización identifica y evalúa los riesgos de manera sistemática.</p>
+          <p>Se desarrolla una visión de portafolio que permite analizar los riesgos de forma integrada.</p>
+          <p>La organización reporta información relevante sobre riesgo, cultura organizacional y rendimiento.</p>
+        </div>
+      </section>
+    </section>
+    <!-- ==========================
+         VISTA 2: PRÁCTICA (SIMULACIONES)
+         ========================== -->
+    <section id="practica" class="view" data-view="practica">
+      <!-- =========================================================
+           PARTE PRÁCTICA (SIMULACIONES)
+           ========================================================= -->
+      <section class="section">
+        <!-- ======= Encabezado de la sección (Práctica) ======= -->
+        <header class="section__header">
+          <h2 class="section__title">Parte práctica</h2>
+          <p class="section__subtitle">
+            Simulaciones interactivas basadas en los documentos: controles (sliders/selectores) que actualizan gráficos y
+            métricas en tiempo real.
+          </p>
+        </header>
+
+        <!-- ======= Grid de simulaciones ======= -->
+        <div class="sim-grid">
+
+          <!-- =====================================================
+               SIM 1: Interrelación entre componentes (Radar doble)
+               ====================================================== -->
+          <article class="sim-card" id="sim-1">
+            <div class="sim-card__head">
+              <h3 class="sim-card__title">Simulación 1 — Interrelación entre componentes</h3>
+              <p class="sim-card__desc">
+                Ajusta niveles por componente. El gráfico radar compara <strong>Importancia Relativa</strong> y
+                <strong>Implementación Típica</strong> y se actualiza automáticamente.
+              </p>
+            </div>
+
+            <div class="sim-layout">
+              <div class="sim-controls">
+                <div class="field">
+                  <label for="s1_entorno">Entorno de control</label>
+                  <div class="field__row">
+                    <input id="s1_entorno" type="range" min="0" max="100" value="80" />
+                    <span class="badge" data-bind="s1_entorno">80</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s1_riesgos">Administración de riesgos</label>
+                  <div class="field__row">
+                    <input id="s1_riesgos" type="range" min="0" max="100" value="70" />
+                    <span class="badge" data-bind="s1_riesgos">70</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s1_actividades">Actividades de control</label>
+                  <div class="field__row">
+                    <input id="s1_actividades" type="range" min="0" max="100" value="90" />
+                    <span class="badge" data-bind="s1_actividades">90</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s1_info">Información y comunicación</label>
+                  <div class="field__row">
+                    <input id="s1_info" type="range" min="0" max="100" value="75" />
+                    <span class="badge" data-bind="s1_info">75</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s1_supervision">Actividades de supervisión</label>
+                  <div class="field__row">
+                    <input id="s1_supervision" type="range" min="0" max="100" value="65" />
+                    <span class="badge" data-bind="s1_supervision">65</span>
+                  </div>
+                </div>
+
+                <div class="note">
+                  <strong>Funcionalidad:</strong> cada control modifica su eje y el radar se recalcula en tiempo real.
+                </div>
+              </div>
+
+              <div class="sim-charts">
+                <div class="chart-card">
+                  <div class="chart-card__title">Interrelación entre Componentes</div>
+                  <canvas id="chart_s1_radar" height="220"></canvas>
+                  <div class="chart-card__footer">
+                    <span class="dot dot--a"></span> Importancia Relativa
+                    <span class="dot dot--b"></span> Implementación Típica
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim-foot">
+              <p class="muted">
+                Debajo de la imagen original, el documento describe que el usuario puede modificar niveles por componente y
+                el radar se actualiza automáticamente, comparando dos series (importancia vs implementación).
+              </p>
+            </div>
+          </article>
+
+          <!-- =====================================================
+               SIM 2: Distribución de objetivos (Donut con tooltip)
+               ====================================================== -->
+          <article class="sim-card" id="sim-2">
+            <div class="sim-card__head">
+              <h3 class="sim-card__title">Simulación 2 — Distribución de objetivos</h3>
+              <p class="sim-card__desc">
+                Visualiza el reparto típico de objetivos en una organización. Pasa el cursor sobre el gráfico para ver
+                porcentajes.
+              </p>
+            </div>
+
+            <div class="sim-layout sim-layout--single">
+              <div class="sim-charts">
+                <div class="chart-card">
+                  <div class="chart-card__title">Distribución de Objetivos</div>
+                  <canvas id="chart_s2_donut" height="220"></canvas>
+                  <div class="chart-card__footer">
+                    <span class="pill">Información 50%</span>
+                    <span class="pill">Operacionales 30%</span>
+                    <span class="pill">Cumplimiento 20%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim-foot">
+              <p class="muted">
+                El documento indica que al pasar el cursor se muestran porcentajes (ej.: cumplimiento 20%), representado en
+                el gráfico circular.
+              </p>
+            </div>
+          </article>
+
+          <!-- =====================================================
+               SIM 3: Panel de control + barras (Efectividad + Riesgo residual)
+               ====================================================== -->
+          <article class="sim-card" id="sim-3">
+            <div class="sim-card__head">
+              <h3 class="sim-card__title">Simulación 3 — Panel de control (barras + métricas)</h3>
+              <p class="sim-card__desc">
+                Ajusta componentes del sistema: el gráfico de barras, la efectividad global y el nivel de riesgo residual se
+                actualizan inmediatamente.
+              </p>
+            </div>
+
+            <div class="sim-layout">
+              <div class="sim-controls">
+                <div class="kpi-row">
+                  <div class="kpi">
+                    <div class="kpi__label">Efectividad del sistema</div>
+                    <div class="kpi__value"><span id="s3_eff">0</span>%</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Nivel de riesgo residual</div>
+                    <div class="kpi__value"><span id="s3_risk">0</span>%</div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s3_entorno">Entorno de Control</label>
+                  <div class="field__row">
+                    <input id="s3_entorno" type="range" min="0" max="100" value="75" />
+                    <span class="badge" data-bind="s3_entorno">75</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s3_eval">Evaluación de Riesgos</label>
+                  <div class="field__row">
+                    <input id="s3_eval" type="range" min="0" max="100" value="50" />
+                    <span class="badge" data-bind="s3_eval">50</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s3_ctrl">Actividades de Control</label>
+                  <div class="field__row">
+                    <input id="s3_ctrl" type="range" min="0" max="100" value="65" />
+                    <span class="badge" data-bind="s3_ctrl">65</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s3_info">Información y Comunicación</label>
+                  <div class="field__row">
+                    <input id="s3_info" type="range" min="0" max="100" value="55" />
+                    <span class="badge" data-bind="s3_info">55</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s3_sup">Actividades de Supervisión</label>
+                  <div class="field__row">
+                    <input id="s3_sup" type="range" min="0" max="100" value="70" />
+                    <span class="badge" data-bind="s3_sup">70</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s3_compl">Complejidad del Entorno</label>
+                  <div class="field__row">
+                    <input id="s3_compl" type="range" min="0" max="100" value="60" />
+                    <span class="badge" data-bind="s3_compl">60</span>
+                  </div>
+                </div>
+
+                <div class="note">
+                  <strong>Funcionalidad:</strong> actualización inmediata (sin botón), y recálculo de efectividad y riesgo.
+                </div>
+              </div>
+
+              <div class="sim-charts">
+                <div class="chart-card">
+                  <div class="chart-card__title">Resultados de la simulación</div>
+                  <canvas id="chart_s3_bars" height="220"></canvas>
+                  <div class="chart-card__footer">
+                    Barras dinámicas por componente (suben/bajan con los sliders).
+                  </div>
+                </div>
+
+                <div class="callout">
+                  <div class="callout__title">Recomendaciones</div>
+                  <ul class="callout__list" id="s3_recos">
+                    <!-- JS llena automáticamente -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim-foot">
+              <p class="muted">
+                El documento describe un panel con deslizadores (componentes + complejidad) conectado al gráfico de barras,
+                mostrando también efectividad del sistema y riesgo residual que cambian en tiempo real.
+              </p>
+            </div>
+          </article>
+
+          <!-- =====================================================
+               SIM 4: Parámetros de la organización => donut + radar
+               ====================================================== -->
+          <article class="sim-card" id="sim-4">
+            <div class="sim-card__head">
+              <h3 class="sim-card__title">Simulación 4 — Parámetros de la organización</h3>
+              <p class="sim-card__desc">
+                Configura tipo de organización y grado de tecnificación: el gráfico circular y el radar se actualizan
+                automáticamente.
+              </p>
+            </div>
+
+            <div class="sim-layout">
+              <div class="sim-controls">
+                <div class="field">
+                  <label for="s4_tipo">Tipo de organización</label>
+                  <select id="s4_tipo">
+                    <option value="pequena">Pequeña</option>
+                    <option value="mediana" selected>Mediana</option>
+                    <option value="grande">Grande</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="s4_tec">Grado de tecnificación</label>
+                  <select id="s4_tec">
+                    <option value="bajo">Bajo</option>
+                    <option value="medio" selected>Medio</option>
+                    <option value="alto">Alto</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="s4_recursos">Recursos disponibles</label>
+                  <div class="field__row">
+                    <input id="s4_recursos" type="range" min="0" max="100" value="60" />
+                    <span class="badge" data-bind="s4_recursos">60</span>
+                  </div>
+                </div>
+
+                <div class="note">
+                  <strong>Funcionalidad:</strong> selectores + slider afectan porcentajes del donut y forma del radar.
+                </div>
+              </div>
+
+              <div class="sim-charts">
+                <div class="chart-card">
+                  <div class="chart-card__title">Visión general del sistema</div>
+                  <canvas id="chart_s4_donut" height="210"></canvas>
+                </div>
+                <div class="chart-card">
+                  <div class="chart-card__title">Radar de componentes</div>
+                  <canvas id="chart_s4_radar" height="210"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim-foot">
+              <p class="muted">
+                El documento explica que menús, botones y deslizadores están conectados a los gráficos; al cambiar el tipo de
+                organización o la tecnificación, el donut varía y el radar cambia su forma en tiempo real.
+              </p>
+            </div>
+          </article>
+
+          <!-- =====================================================
+               SIM 5: Calidad de la información (sliders + radar + % total)
+               ====================================================== -->
+          <article class="sim-card" id="sim-5">
+            <div class="sim-card__head">
+              <h3 class="sim-card__title">Simulación 5 — Calidad de la información</h3>
+              <p class="sim-card__desc">
+                Ajusta atributos de calidad: el radar (nivel actual vs nivel óptimo) y el indicador general cambian al
+                instante.
+              </p>
+            </div>
+
+            <div class="sim-layout">
+              <div class="sim-controls">
+                <div class="kpi-row">
+                  <div class="kpi">
+                    <div class="kpi__label">Calidad total</div>
+                    <div class="kpi__value"><span id="s5_quality">0</span>%</div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s5_acc">Accesibilidad</label>
+                  <div class="field__row">
+                    <input id="s5_acc" type="range" min="0" max="100" value="70" />
+                    <span class="badge" data-bind="s5_acc">70</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s5_pre">Precisión</label>
+                  <div class="field__row">
+                    <input id="s5_pre" type="range" min="0" max="100" value="85" />
+                    <span class="badge" data-bind="s5_pre">85</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s5_opo">Oportunidad</label>
+                  <div class="field__row">
+                    <input id="s5_opo" type="range" min="0" max="100" value="78" />
+                    <span class="badge" data-bind="s5_opo">78</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s5_pro">Protección</label>
+                  <div class="field__row">
+                    <input id="s5_pro" type="range" min="0" max="100" value="80" />
+                    <span class="badge" data-bind="s5_pro">80</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s5_suf">Suficiencia</label>
+                  <div class="field__row">
+                    <input id="s5_suf" type="range" min="0" max="100" value="60" />
+                    <span class="badge" data-bind="s5_suf">60</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s5_ver">Verificabilidad</label>
+                  <div class="field__row">
+                    <input id="s5_ver" type="range" min="0" max="100" value="68" />
+                    <span class="badge" data-bind="s5_ver">68</span>
+                  </div>
+                </div>
+
+                <div class="note">
+                  <strong>Funcionalidad:</strong> radar actual vs óptimo y recálculo automático del % total.
+                </div>
+              </div>
+
+              <div class="sim-charts">
+                <div class="chart-card">
+                  <div class="chart-card__title">Calidad de la Información</div>
+                  <canvas id="chart_s5_radar" height="240"></canvas>
+                  <div class="chart-card__footer">
+                    <span class="dot dot--a"></span> Nivel actual
+                    <span class="dot dot--b"></span> Nivel óptimo (referencia)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim-foot">
+              <p class="muted">
+                Según el documento, cada deslizador cambia el valor numérico y el radar se ajusta en tiempo real, manteniendo
+                una serie óptima como referencia y recalculando el porcentaje total de calidad.
+              </p>
+            </div>
+          </article>
+
+          <!-- =====================================================
+               SIM 6: Supervisión (radar + KPIs + recomendaciones)
+               ====================================================== -->
+          <article class="sim-card" id="sim-6">
+            <div class="sim-card__head">
+              <h3 class="sim-card__title">Simulación 6 — Supervisión (radar + indicadores clave)</h3>
+              <p class="sim-card__desc">
+                Ajusta parámetros de supervisión: el radar (actual vs objetivo), los KPIs y las recomendaciones se actualizan
+                automáticamente.
+              </p>
+            </div>
+
+            <div class="sim-layout">
+              <div class="sim-controls">
+                <div class="field">
+                  <label for="s6_madurez">Madurez del sistema</label>
+                  <div class="field__row">
+                    <input id="s6_madurez" type="range" min="0" max="100" value="50" />
+                    <span class="badge" data-bind="s6_madurez">50</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s6_cambio">Velocidad de cambio</label>
+                  <div class="field__row">
+                    <input id="s6_cambio" type="range" min="0" max="100" value="55" />
+                    <span class="badge" data-bind="s6_cambio">55</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s6_cont">Evaluaciones continuas</label>
+                  <div class="field__row">
+                    <input id="s6_cont" type="range" min="0" max="100" value="60" />
+                    <span class="badge" data-bind="s6_cont">60</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s6_ind">Evaluaciones independientes</label>
+                  <div class="field__row">
+                    <input id="s6_ind" type="range" min="0" max="100" value="45" />
+                    <span class="badge" data-bind="s6_ind">45</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s6_com">Comunicación</label>
+                  <div class="field__row">
+                    <input id="s6_com" type="range" min="0" max="100" value="58" />
+                    <span class="badge" data-bind="s6_com">58</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s6_seg">Seguimiento</label>
+                  <div class="field__row">
+                    <input id="s6_seg" type="range" min="0" max="100" value="52" />
+                    <span class="badge" data-bind="s6_seg">52</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s6_mej">Mejora continua</label>
+                  <div class="field__row">
+                    <input id="s6_mej" type="range" min="0" max="100" value="50" />
+                    <span class="badge" data-bind="s6_mej">50</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sim-charts">
+                <div class="chart-card">
+                  <div class="chart-card__title">Visión general de supervisión</div>
+                  <canvas id="chart_s6_radar" height="220"></canvas>
+                  <div class="chart-card__footer">
+                    <span class="dot dot--a"></span> Estado actual
+                    <span class="dot dot--b"></span> Objetivo
+                  </div>
+                </div>
+
+                <div class="kpi-stack">
+                  <div class="kpi kpi--stack">
+                    <div class="kpi__label">Efectividad global</div>
+                    <div class="kpi__value"><span id="s6_kpi_eff">0</span>%</div>
+                  </div>
+                  <div class="kpi kpi--stack">
+                    <div class="kpi__label">Cobertura de evaluaciones</div>
+                    <div class="kpi__value"><span id="s6_kpi_cov">0</span>%</div>
+                  </div>
+                  <div class="kpi kpi--stack">
+                    <div class="kpi__label">Planes de acción</div>
+                    <div class="kpi__value"><span id="s6_kpi_plan">0</span>%</div>
+                  </div>
+                  <div class="kpi kpi--stack">
+                    <div class="kpi__label">Madurez del sistema</div>
+                    <div class="kpi__value"><span id="s6_kpi_mad">0</span>%</div>
+                  </div>
+                </div>
+
+                <div class="callout">
+                  <div class="callout__title">Recomendaciones basadas en parámetros actuales</div>
+                  <ul class="callout__list" id="s6_recos">
+                    <!-- JS llena automáticamente -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim-foot">
+              <p class="muted">
+                El documento señala que el radar refleja cambios en tiempo real y que, al mismo tiempo, se recalculan KPIs y
+                se generan recomendaciones automáticas.
+              </p>
+            </div>
+          </article>
+
+          <!-- =====================================================
+               SIM 7: Panel de efectividad por componentes (donut + lista)
+               ====================================================== -->
+          <article class="sim-card" id="sim-7">
+            <div class="sim-card__head">
+              <h3 class="sim-card__title">Simulación 7 — Panel de efectividad del sistema</h3>
+              <p class="sim-card__desc">
+                Resumen visual: participación relativa por componente (donut) + indicadores porcentuales por componente.
+              </p>
+            </div>
+
+            <div class="sim-layout">
+              <div class="sim-controls">
+                <div class="note">
+                  <strong>Funcionalidad:</strong> este panel muestra el estado del sistema y resalta áreas críticas según los
+                  porcentajes por componente.
+                </div>
+
+                <div class="comp-list">
+                  <div class="comp-item">
+                    <span>Ambiente de Control</span><strong id="s7_c1">72%</strong>
+                  </div>
+                  <div class="comp-item">
+                    <span>Evaluación de Riesgos</span><strong id="s7_c2">58%</strong>
+                  </div>
+                  <div class="comp-item">
+                    <span>Actividades de Control</span><strong id="s7_c3">64%</strong>
+                  </div>
+                  <div class="comp-item">
+                    <span>Información y Comunicación</span><strong id="s7_c4">55%</strong>
+                  </div>
+                  <div class="comp-item">
+                    <span>Actividades de Supervisión</span><strong id="s7_c5">61%</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sim-charts">
+                <div class="chart-card">
+                  <div class="chart-card__title">Participación relativa (efectividad)</div>
+                  <canvas id="chart_s7_donut" height="230"></canvas>
+                  <div class="chart-card__footer">
+                    Donut basado en los porcentajes por componente (comparación visual rápida).
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim-foot">
+              <p class="muted">
+                El documento explica que este panel detalla porcentajes por componente y ayuda a identificar brechas para
+                mejorar la efectividad global.
+              </p>
+            </div>
+          </article>
+
+          <!-- =====================================================
+               SIM 8 (ERM): Gestión de riesgos empresariales — visión integral
+               ====================================================== -->
+          <article class="sim-card sim-card--wide" id="sim-8">
+            <div class="sim-card__head">
+              <h3 class="sim-card__title">Simulación 8 — ERM: Gestión de Riesgos Empresariales (integral)</h3>
+              <p class="sim-card__desc">
+                Ajusta la postura estratégica (apetito, enfoque e inversión en ERM) y observa cómo cambian riesgo/retorno,
+                indicadores, escenarios, portafolio y prospectiva.
+              </p>
+            </div>
+
+            <!-- ======= Controles estratégicos ======= -->
+            <div class="sim-layout">
+              <div class="sim-controls">
+                <div class="field">
+                  <label for="s8_apetito">Apetito al riesgo</label>
+                  <div class="field__row">
+                    <input id="s8_apetito" type="range" min="0" max="10" value="5" />
+                    <span class="badge" data-bind="s8_apetito">5</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="s8_enfoque">Enfoque estratégico</label>
+                  <select id="s8_enfoque">
+                    <option value="conservador">Conservador</option>
+                    <option value="equilibrado" selected>Equilibrado</option>
+                    <option value="agresivo">Agresivo</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="s8_inversion">Inversión en capacidades de ERM</label>
+                  <div class="field__row">
+                    <input id="s8_inversion" type="range" min="0" max="10" value="6" />
+                    <span class="badge" data-bind="s8_inversion">6</span>
+                  </div>
+                </div>
+
+                <div class="kpi-row">
+                  <div class="kpi">
+                    <div class="kpi__label">Alineación con misión</div>
+                    <div class="kpi__value"><span id="s8_kpi_mision">0</span>%</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Potencial de crecimiento</div>
+                    <div class="kpi__value"><span id="s8_kpi_crece">0</span>%</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Resiliencia organizacional</div>
+                    <div class="kpi__value"><span id="s8_kpi_resi">0</span>%</div>
+                  </div>
+                </div>
+
+                <div class="note">
+                  <strong>Funcionalidad:</strong> parámetros estratégicos definen la postura de riesgo y actualizan gráficos e
+                  indicadores.
+                </div>
+              </div>
+
+              <div class="sim-charts">
+                <div class="chart-card">
+                  <div class="chart-card__title">Mapa de Riesgo vs Retorno</div>
+                  <canvas id="chart_s8_scatter" height="230"></canvas>
+                </div>
+
+                <div class="chart-card">
+                  <div class="chart-card__title">Componentes del marco ERM (importancia)</div>
+                  <canvas id="chart_s8_radar" height="230"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======= Escenarios de riesgo ======= -->
+            <div class="subblock">
+              <h4 class="subblock__title">Escenarios de riesgo</h4>
+
+              <div class="sim-layout">
+                <div class="sim-controls">
+                  <div class="field">
+                    <label for="s8_escenario">Seleccionar escenario</label>
+                    <select id="s8_escenario">
+                      <option value="fallo_operacional">Fallo operacional</option>
+                      <option value="volatilidad_mercado" selected>Volatilidad del mercado</option>
+                      <option value="ciberincidente">Ciberincidente</option>
+                      <option value="incumplimiento">Incumplimiento regulatorio</option>
+                    </select>
+                  </div>
+
+                  <div class="field">
+                    <label for="s8_severidad">Severidad del evento</label>
+                    <div class="field__row">
+                      <input id="s8_severidad" type="range" min="1" max="10" value="4" />
+                      <span class="badge" data-bind="s8_severidad">4</span>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label for="s8_respuesta">Velocidad de respuesta</label>
+                    <div class="field__row">
+                      <input id="s8_respuesta" type="range" min="1" max="10" value="5" />
+                      <span class="badge" data-bind="s8_respuesta">5</span>
+                    </div>
+                  </div>
+
+                  <div class="kpi-row">
+                    <div class="kpi">
+                      <div class="kpi__label">Impacto en rendimiento</div>
+                      <div class="kpi__value"><span id="s8_impacto">0</span>%</div>
+                    </div>
+                    <div class="kpi">
+                      <div class="kpi__label">Tiempo de recuperación</div>
+                      <div class="kpi__value"><span id="s8_recupera">0</span> meses</div>
+                    </div>
+                    <div class="kpi">
+                      <div class="kpi__label">Impacto en resiliencia</div>
+                      <div class="kpi__value"><span id="s8_resil">0</span>%</div>
+                    </div>
+                  </div>
+
+                  <div class="callout">
+                    <div class="callout__title">Lecciones aprendidas</div>
+                    <ul class="callout__list" id="s8_lessons">
+                      <!-- JS llena automáticamente -->
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="sim-charts">
+                  <div class="chart-card">
+                    <div class="chart-card__title">Rendimiento: normal vs con evento</div>
+                    <canvas id="chart_s8_line" height="240"></canvas>
+                    <div class="chart-card__footer">
+                      Proyección temporal para observar caída inicial y recuperación.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======= Portafolio / mapa de calor ======= -->
+            <div class="subblock">
+              <h4 class="subblock__title">Portafolio y mapa de calor de riesgos</h4>
+
+              <div class="sim-layout">
+                <div class="sim-controls">
+                  <div class="comp-list">
+                    <div class="comp-item">
+                      <span>Riesgo Estratégico</span><strong id="s8_r_estr">0%</strong>
+                    </div>
+                    <div class="comp-item">
+                      <span>Riesgo Operacional</span><strong id="s8_r_oper">0%</strong>
+                    </div>
+                    <div class="comp-item">
+                      <span>Riesgo de Cumplimiento</span><strong id="s8_r_cump">0%</strong>
+                    </div>
+                  </div>
+
+                  <div class="callout">
+                    <div class="callout__title">Acciones recomendadas</div>
+                    <ul class="callout__list" id="s8_actions">
+                      <!-- JS llena automáticamente -->
+                    </ul>
+                  </div>
+
+                  <div class="note">
+                    <strong>Funcionalidad:</strong> el mapa posiciona riesgos por probabilidad e impacto y se recalcula según
+                    la postura estratégica.
+                  </div>
+                </div>
+
+                <div class="sim-charts">
+                  <div class="chart-card">
+                    <div class="chart-card__title">Mapa de calor (Impacto vs Probabilidad)</div>
+                    <canvas id="chart_s8_heat" height="240"></canvas>
+                    <div class="chart-card__footer">
+                      Representación tipo burbujas: tamaño = criticidad (impacto×probabilidad).
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======= Rendimiento y prospectiva ======= -->
+            <div class="subblock">
+              <h4 class="subblock__title">Rendimiento y prospectiva</h4>
+
+              <div class="sim-layout">
+                <div class="sim-controls">
+                  <div class="kpi-stack">
+                    <div class="kpi kpi--stack">
+                      <div class="kpi__label">Capacidad de respuesta</div>
+                      <div class="kpi__value"><span id="s8_kpi_resp">0</span>%</div>
+                    </div>
+                    <div class="kpi kpi--stack">
+                      <div class="kpi__label">Madurez de procesos</div>
+                      <div class="kpi__value"><span id="s8_kpi_proc">0</span>%</div>
+                    </div>
+                    <div class="kpi kpi--stack">
+                      <div class="kpi__label">Cultura de riesgo</div>
+                      <div class="kpi__value"><span id="s8_kpi_cult">0</span>%</div>
+                    </div>
+                    <div class="kpi kpi--stack">
+                      <div class="kpi__label">Efectividad de ERM</div>
+                      <div class="kpi__value"><span id="s8_kpi_erm">0</span>%</div>
+                    </div>
+                  </div>
+
+                  <div class="checkblock">
+                    <h5 class="checkblock__title">Beneficios de la gestión de riesgos</h5>
+                    <label class="check"><input type="checkbox" checked disabled /> Reducción de sorpresas</label>
+                    <label class="check"><input type="checkbox" checked disabled /> Menor variabilidad</label>
+                    <label class="check"><input type="checkbox" checked disabled /> Mejor asignación de recursos</label>
+                    <label class="check"><input type="checkbox" disabled /> Aumento de oportunidades</label>
+                  </div>
+
+                  <div class="checkblock">
+                    <h5 class="checkblock__title">Tendencias futuras en ERM</h5>
+                    <label class="check"><input type="checkbox" disabled /> Proliferación de datos</label>
+                    <label class="check"><input type="checkbox" disabled /> Inteligencia artificial</label>
+                    <label class="check"><input type="checkbox" checked disabled /> Costo-efectividad</label>
+                    <label class="check"><input type="checkbox" disabled /> Organizaciones más fuertes</label>
+                  </div>
+                </div>
+
+                <div class="sim-charts">
+                  <div class="chart-card">
+                    <div class="chart-card__title">KPIs de rendimiento y resiliencia</div>
+                    <canvas id="chart_s8_kpis" height="220"></canvas>
+                  </div>
+
+                  <div class="chart-card">
+                    <div class="chart-card__title">Evolución del rendimiento</div>
+                    <canvas id="chart_s8_perf" height="220"></canvas>
+                    <div class="chart-card__footer">
+                      Índice de riesgo vs rendimiento real vs objetivo (lectura temporal).
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim-foot">
+              <p class="muted">
+                El documento describe que la simulación ERM integra parámetros estratégicos, riesgo vs retorno, escenarios
+                (severidad y velocidad de respuesta), mapa de calor con acciones recomendadas y un módulo final de KPIs,
+                evolución del rendimiento, beneficios y tendencias.
+              </p>
+            </div>
+          </article>
+
+        </div><!-- /.sim-grid -->
+      </section>
+    </section>
+
+    <footer class="footer">
+      <span>©</span><span>Documento informativo</span>
+    </footer>
+  </main>
+
+  <!-- Botón arriba -->
+  <button class="toTop" id="toTop" type="button" title="Volver arriba">↑</button>
+
+  <!-- ==========================
+       JS (Archivo externo)
+       ========================== -->
+  <script src="app.js"></script>
+</body>
+</html>
